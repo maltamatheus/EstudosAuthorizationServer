@@ -17,6 +17,7 @@
 	<properties>
 		<java.version>17</java.version>
 		<spring-security-oauth2.version>2.3.7.RELEASE</spring-security-oauth2.version>
+		<jaxb-core.version>4.0.1</jaxb-core.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -34,6 +35,26 @@
 			<artifactId>spring-security-oauth2</artifactId>
 			<version>${spring-security-oauth2.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>${javax-jaxb.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-core</artifactId>
+			<version>${jaxb-core.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.32</version>
+			<scope>provided</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
